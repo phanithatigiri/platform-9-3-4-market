@@ -8,7 +8,7 @@ Imagine if the wizarding world had its own e-commerce platform — this would be
 
 ## ✨ About the Website 
 
-🪄 **Products:** Discover **magical Books, Wands, Robes* & **Dresses**, and *Jewellery*, each enchanted with unique powers!
+🪄 **Products:** Discover **magical Books, Wands, Robes** & **Dresses**, and **Jewellery**, each enchanted with unique powers!
 
 📚 **Books:** Spellbooks, potions recipes, and magical history — all inspired by Hogwarts!
 
