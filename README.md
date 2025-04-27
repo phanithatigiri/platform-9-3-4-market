@@ -6,8 +6,9 @@ Built with MERN Stack, secured with JWT Authentication, and styled magically wit
 
 Imagine if the wizarding world had its own e-commerce platform — this would be it! 🪄🛒
 
-✨ About the Website
-🪄 **Products:** Discover magical Books, Wands, Robes & Dresses, and Jewelry, each enchanted with unique powers!
+## ✨ About the Website 
+
+🪄 **Products:** Discover **magical Books, Wands, Robes* & **Dresses**, and *Jewellery*, each enchanted with unique powers!
 
 📚 **Books:** Spellbooks, potions recipes, and magical history — all inspired by Hogwarts!
 
@@ -19,7 +20,7 @@ Imagine if the wizarding world had its own e-commerce platform — this would be
 
 Every item tells a story from the Harry Potter universe, reimagined for a shopping experience in the wizarding world! 🌌
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 ⚛️ React (Frontend)
 
 🖥️ Express & Node.js (Backend)
@@ -30,7 +31,7 @@ Every item tells a story from the Harry Potter universe, reimagined for a shoppi
 
 🔒 JWT Authentication (Secure Login)
 
-# 🧙‍♂️ Concept
+## 🧙‍♂️ Concept
 
 *"If the Wizarding World had its own Amazon, it would be the Platform 9¾ Market!" 🚂📦✨
 Inspired by the magic of Harry Potter, this platform brings an enchanted shopping experience to life — where every click feels like a spell cast!*
