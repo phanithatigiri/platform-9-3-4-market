@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Outfit:wght@100..900&family=Quintessential&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+a.active hr{
+  display: block;
+}
+
+@font-face {
+  font-family: 'Hogwarts';
+  src: url('./assets/fonts/HarryP-MVZ6w.ttf') format('truetype');
+}
+
+.magic-text {
+  font-family: 'Hogwarts', sans-serif;
+}
+
+.latest-collection-p {
+  font-family: 'Quintessential', cursive;
+  
+}
+
+.overflow-x-auto {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; /* Snap behavior for small screens */
+}
+
+.scroll-snap-align-start {
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+  }
+  .md:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .md:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+}
+
+/* Hide scrollbar for modern browsers */
+.overflow-x-auto {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;    /* Firefox */
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+
+@keyframes shimmer {
+  0% { background-position: -500% 0; }
+  100% { background-position: 500% 0; }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #a855f7, #ec4899, #facc15, #a855f7);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+

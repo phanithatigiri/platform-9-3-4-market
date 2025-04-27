@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Hogwarts' ;
+  src: url('./assets/fonts/HarryP-MVZ6w.ttf') format('truetype');
+}
+
+
+.magic-text{
+  font-family: 'Hogwarts', 'serif';
+}
+
+/* .active{
+  background-color:aquamarine;
+
+} */
+
+select,input,textarea{
+  border:1px solid rgb(180, 163, 163);
+  outline:none;
+  border-radius: 4px;
+  
+}
