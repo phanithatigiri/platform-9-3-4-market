@@ -6,6 +6,9 @@ Built with MERN Stack, secured with JWT Authentication, and styled magically wit
 
 Imagine if the wizarding world had its own e-commerce platform — this would be it! 🪄🛒
 
+## 🚀 Live Demo 
+🔗 [Click Here to visit the  Platform 9¾ Market 🚂](https://platform-9-3-4-market.onrender.com)
+
 ## ✨ About the Website 
 
 🪄 **Products:** Discover **magical Books, Wands, Robes** & **Dresses**, and **Jewellery**, each enchanted with unique powers!
