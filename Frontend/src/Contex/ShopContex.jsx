@@ -4,7 +4,7 @@ import { magicalJewellery } from "../assets/jewellery/Jassest";
 import { Bookss } from "../assets/books/asset";
 import {useNavigate} from 'react-router-dom'
 import { lastestproducts } from "../assets/lastestproducts/latestasset";
-import { toast } from "react-toastify";
+import { toast } from "react-hot-toast";
 import axios from 'axios'
 
 
@@ -54,7 +54,7 @@ const ShopContextProvider = (props)=>{
 
             //added successful message
 
-            toast.success('added to cart! 🛒',{
+            toast.success('Yay! 🎉 Added to cart!',{
                 position:"top-right",
                 autoClose:1000
             })

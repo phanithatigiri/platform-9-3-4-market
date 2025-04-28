@@ -53,6 +53,7 @@ const Login = () => {
    useEffect(()=>{
        if(token){
         navigate('/')
+        toast.success("Successfully Logged in ")
        }
    },[token])
 
