@@ -26,17 +26,19 @@ Every item tells a story from the Harry Potter universe, reimagined for a shoppi
 
 ## 🛠️ Tech Stack
 
-⚛️ React (Frontend)
+- React (Frontend)
 
-🖥️ Express & Node.js (Backend)
+- Express & Node.js (Backend)
 
-🍃 MongoDB (Database)
+- MongoDB (Database)
 
-🎨 Tailwind CSS (Styling)
+- Tailwind CSS (Styling)
 
-🔒 JWT Authentication (Secure Login)
+- JWT Authentication (Secure Login)
 
-💳 **Razorpay** (for **handling payments**)
+- **Razorpay** (for **handling payments**)
+
+- Hosting: **Render**
 
 ## 🧙‍♂️ Concept
 
