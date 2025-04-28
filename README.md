@@ -9,6 +9,9 @@ Imagine if the wizarding world had its own e-commerce platform — this would be
 ## 🚀 Live Demo 
 🔗 [Click Here to visit the  Platform 9¾ Market 🚂](https://platform-9-3-4-market.onrender.com)
 
+## Note on Performance (Free Tire Hosting)
+This website is deployed on Render’s free tier, which may cause a delay in loading services after periods of inactivity. As a result, products might not display immediately when you first visit the site. It typically takes 30-60 seconds for the backend service to wake up and serve API requests. For the best experience, please allow a moment for the webiste to load,
+
 ## ✨ About the Website 
 
 🪄 **Products:** Discover **magical Books, Wands, Robes** & **Dresses**, and **Jewellery**, each enchanted with unique powers!
