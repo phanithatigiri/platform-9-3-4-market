@@ -39,7 +39,7 @@ const PlaceOrders = () => {
       key: import.meta.env.VITE_RAZORPAY_KEY_ID, // Replace with your Razorpay key_id
       amount: order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
       currency: 'INR',
-      name: 'Magical Crafts',
+      name: 'Platform 9¾ Market',
       description: 'Transaction',
       order_id: order.id, // This is the order_id created in the backend
       receipt:order.receipt,
