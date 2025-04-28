@@ -65,14 +65,14 @@ const Login = () => {
   
     {/* Content (form, heading, etc) */}
     <div className="relative z-10 flex flex-col gap-2 justify-center rounded-md items-center p-4 min-h-screen">
-      <div className="bg-[#fcfaf4] max-w-md  w-full rounded relative   ">
+      <div className="bg-[#fcfaf4] max-w-md  w-full rounded relative shadow-md shadow-gray-400  ">
       <h1 className="text-[30px]  text-gray-600 sm:text-[50px] magic-text text-center">
   <span className="bg-gradient-to-r font-medium from-red-500 via-blue-500 to-green-500 text-transparent bg-clip-text">
   Platform 9¾ Market
   </span>{' '}
   <span>🔮</span>
 </h1>
-<p className='text-center mb-2 text-sm font-serif font-semibold'>Not Just a Platform—A Portal to Wonder</p>
+
 
       </div>
   
