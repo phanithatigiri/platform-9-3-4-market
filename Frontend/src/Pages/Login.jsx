@@ -61,7 +61,7 @@ const Login = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
     {/* Blurred background */}
-    <div className="absolute inset-0 bg-[url('/bg.png')] bg-cover bg-center blur-[1px] z-0" />
+    <div className="absolute inset-0 bg-[url('/bg.png?v=2')] bg-cover bg-center blur-[1px] z-0" />
   
     {/* Content (form, heading, etc) */}
     <div className="relative z-10 flex flex-col gap-2 justify-center rounded-md items-center p-4 min-h-screen">
