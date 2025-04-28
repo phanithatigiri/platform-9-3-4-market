@@ -17,12 +17,12 @@ Imagine if the wizarding world had its own e-commerce platform — this would be
 🧥 **Dresses:** Enchanted robes and mystical outfits, ready for the next Yule Ball or Quidditch match.
 
 💍 **Jewelry:** Magical trinkets infused with ancient spells for protection, luck, and power.
-
-💳 **Razorpay** (for **handling payments**) 
+ 
 
 Every item tells a story from the Harry Potter universe, reimagined for a shopping experience in the wizarding world! 🌌
 
 ## 🛠️ Tech Stack
+
 ⚛️ React (Frontend)
 
 🖥️ Express & Node.js (Backend)
@@ -32,6 +32,8 @@ Every item tells a story from the Harry Potter universe, reimagined for a shoppi
 🎨 Tailwind CSS (Styling)
 
 🔒 JWT Authentication (Secure Login)
+
+💳 **Razorpay** (for **handling payments**)
 
 ## 🧙‍♂️ Concept
 
