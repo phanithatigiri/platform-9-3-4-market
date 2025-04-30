@@ -32,59 +32,53 @@ const PlaceOrders = () => {
 
   //Razorpay interface 
 
-  const razorpayinterface = (order) => {
-  console.log('Razorpay order received:', order);
-  const options = {
-    key: import.meta.env.VITE_RAZORPAY_KEY_ID,
-    amount: order.amount,
-    currency: 'INR',
-    name: 'Platform 9¾ Market',
-    description: 'Transaction',
-    order_id: order.id,
-    receipt: order.receipt,
-    handler: async (response) => {
-      console.log('Razorpay payment response:', response);
-      try {
-        const { data } = await axios.post(
-          backendurl + '/api/order/verifyrazorpay',
-          response,
-          { headers: { token } }
-        );
-        if (data.success) {
-          setcartitems({});
-          navigate('/morders');
-          toast.success('Payment Successful!');
-        } else {
-          toast.error(data.message || 'Verification failed');
-        }
-      } catch (error) {
-        console.error('Verification error:', error);
-        toast.error('Payment verification failed: ' + error.message);
-      }
-    },
-    prefill: {
-      name: 'Phani',
-      email: 'MagicalCrafts@luminos.com',
-      contact: '7731914640',
-    },
-    theme: {
-      color: '#F37254',
-    },
-  };
+  const razorpayinterface = (order)=> {
 
-  console.log('Razorpay options:', options);
-  if (window.Razorpay) {
-    const rzp = new window.Razorpay(options);
-    rzp.on('payment.failed', (response) => {
-      console.error('Payment failed:', response.error);
-      toast.error('Payment failed: ' + response.error.description);
-    });
+    const options = {
+
+      key: import.meta.env.VITE_RAZORPAY_KEY_ID, // Replace with your Razorpay key_id
+      amount: order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+      currency: 'INR',
+      name: 'Platform 9¾ Market',
+      description: 'Transaction',
+      order_id: order.id, // This is the order_id created in the backend
+      receipt:order.receipt,
+      callback_url: '', // Your success URL
+      prefill: {
+        name: 'phani',
+        email: 'MagicalCrafts@luminos.com',
+        contact: '7731914640'
+      },
+      theme: {
+        color: '#F37254'
+      },
+
+      handler : async (response)=>{
+
+          try {
+
+            const {data} = await axios.post(backendurl+'/api/order/verifyrazorpay',response,{headers:{token}})
+            if(data.success){
+              navigate('/morders')
+              setcartitems({})
+            }
+            
+          } catch (error) {
+
+            console.log(error)
+            toast.error(error)
+            
+          }
+        
+      }
+    };
+
+    const rzp = new Razorpay(options);
     rzp.open();
-  } else {
-    console.error('Razorpay SDK not loaded');
-    toast.error('Razorpay SDK failed to load. Please refresh the page.');
+
+    
+
   }
-};
 
   const onSubmitHandler = async(e)=>{
      try {

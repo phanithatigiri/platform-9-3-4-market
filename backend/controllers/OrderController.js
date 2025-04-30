@@ -58,34 +58,42 @@ const placeorder = async (req,res)=>{
 // for razorpay 
 
 const razorpay = async (req, res) => {
-    const { address, items, amount } = req.body;
+    const {userId , items , amount,address} = req.body
+
     try {
-      const orderData = {
-        userId: req.headers.token,
-        items,
-        amount,
-        address,
-        paymentMethod: 'Razorpay',
-        date: Date.now(),
-      };
-      const newOrder = new orderModel(orderData);
-      await newOrder.save();
-      console.log('Order saved:', newOrder);
-  
-      const options = {
-        amount: amount * 100,
-        currency: 'INR',
-        receipt: newOrder._id.toString(),
-      };
-  
-      const order = await RazorpayInstances.orders.create(options);
-      console.log('Razorpay order created:', order);
-      res.json({ success: true, order });
+
+        const orderData = {
+
+            userId,
+            items,
+            amount,
+            address,
+            paymentMethod:"Razorpay",
+            date:Date.now()
+    
+        }
+    
+        const newOrder = new orderModel(orderData)
+        await newOrder.save()
+    
+        const options = {
+            amount : amount *100,
+            currency:"INR",
+            receipt:newOrder._id.toString()
+    
+        }
+    
+        const order = await RazorpayInstances.orders.create(options)
+        res.json({success:true,order})
+        
     } catch (error) {
-      console.error('Razorpay order creation failed:', error);
-      res.json({ success: false, message: error.message });
+
+        console.log(error)
+        res.json({success:false,message:error.message})
+ 
     }
-  };
+
+}
 
 
 
